@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="waiting_message_price_shown">I prezzi sono</string>
+    <string name="about_information_text">Best Travel-il sogno di ogni viaggiatore! Troveremo non solo voli economici per voli in tutto il mondo, tra cui charter e loukost, ma anche per trovare un hotel accogliente per voi. E se vuoi andare in auto, offriremo le opzioni più ottimali. E tutto questo in un\'unica applicazione! Non vendiamo i biglietti da soli, ma aiutiamo a trovare l\'opzione migliore senza commissioni con l\'aiuto di più di 300 agenzie partner.</string>
+    <string name="settings_title_region_settings">Impostazioni regionali</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="waiting_message_price_shown">Preise sind</string>
+    <string name="about_information_text">Best Travel ist der Traum eines jeden Reisenden! Wir finden nicht nur günstige Flüge für Flüge auf der ganzen Welt, einschließlich Charter und lowcosts, sondern auch ein gemütliches Hotel für Sie. Und wenn Sie mit dem Auto fahren möchten, bieten wir die optimalsten Optionen an. Und das alles in einer App! Wir verkaufen keine Tickets selbst, sondern helfen, die beste Option ohne provision mit mehr als 300 Partneragenturen zu finden.</string>
+    <string name="settings_title_region_settings">Ländereinstellungen</string>
+</resources>

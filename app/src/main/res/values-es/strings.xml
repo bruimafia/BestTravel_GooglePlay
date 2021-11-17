@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="waiting_message_price_shown">Los precios son</string>
+    <string name="about_information_text">Best Travel es el sueño de todos los viajeros! Encontraremos no solo vuelos baratos a vuelos en todo el mundo, incluidas cartas y Low costs, sino que también seleccionaremos un hotel acogedor para usted. Y si quieres ir en coche, te ofreceremos las mejores opciones. Y todo esto en una sola aplicación! No vendemos boletos nosotros mismos, sino que ayudamos a encontrar la mejor opción sin Comisión con la ayuda de más de 300 agencias asociadas.</string>
+    <string name="settings_title_region_settings">Configuración Regional</string>
+</resources>

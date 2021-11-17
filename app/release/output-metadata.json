@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "ru.bruimafia.officialtickets",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 7,
+      "versionName": "1.2",
+      "outputFile": "best_travel-1.2-code7-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

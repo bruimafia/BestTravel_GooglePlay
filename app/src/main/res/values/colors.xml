@@ -1,0 +1,8 @@
+<resources>
+    <color name="primary">#0095b6</color>
+    <color name="primary_dark">#007792</color>
+    <color name="primaryButton">#ff6a49</color>
+    <color name="positiveButton">#008080</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_400">#BDBDBD</color>
+</resources>
