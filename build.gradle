@@ -1,35 +1,49 @@
 buildscript {
-    ext.kotlin_version = '1.5.31'
+    ext.kotlin_version = '1.7.10'
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
-        jcenter()
+        maven { url 'https://sdk.aviasales.ru/repository/gradle-plugins/' }
+        maven { url 'https://sdk.aviasales.ru/repository/maven/' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath 'com.android.tools.build:gradle:7.4.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.0'
-        classpath 'com.google.gms:google-services:4.3.10'
-        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.13.4'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.8'
+        classpath 'com.google.gms:google-services:4.3.15'
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        exclusiveContent {
+            forRepository {
+                maven { url 'https://sdk.aviasales.ru/repository/aviasales/' }
+            }
+            filter {
+                includeGroupByRegex("com.hannesdorfmann.mosby.*")
+                includeGroupByRegex("com.j256.*")
+                includeModule("com.google.maps.android", "android-maps-utils")
+            }
+        }
+        maven { url 'https://sdk.aviasales.ru/repository/hotellook/' }
+        maven { url 'https://sdk.aviasales.ru/repository/jitpack/' }
+        maven { url 'https://sdk.aviasales.ru/repository/maven-central/' }
+        maven { url 'https://sdk.aviasales.ru/repository/jcenter/' }
+        maven { url 'https://sdk.aviasales.ru/repository/maven/' }
+        maven { url 'https://sdk.aviasales.ru/repository/mymavenrepo/' }
+        maven { url 'https://sdk.aviasales.ru/repository/travelpayouts/' }
         maven { url 'https://jitpack.io' }
         maven { url 'https://maven.google.com' }
         maven { url 'https://maven.fabric.io/public' }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "https://sdk.smartlook.com/android/release" }
-        maven { url 'https://sdk.aviasales.ru/repository/hotellook/' }
-        maven { url 'https://sdk.aviasales.ru/repository/travelpayouts/' }
     }
 }
 
-task clean(type: Delete) {
+tasks.register('clean', Delete) {
     delete rootProject.buildDir
 }

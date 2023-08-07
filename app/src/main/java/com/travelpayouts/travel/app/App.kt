@@ -20,8 +20,7 @@ class App : TravelApp() {
 
     override fun onCreate() {
         super.onCreate()
-        val config = YandexMetricaConfig.newConfigBuilder(getString(R.string.yandex_metrica_api))
-            .build() // Creating an extended library configuration
+        val config = YandexMetricaConfig.newConfigBuilder(getString(R.string.yandex_metrica_api)).build() // Creating an extended library configuration
         YandexMetrica.activate(applicationContext, config) // Initializing the AppMetrica SDK
         YandexMetrica.enableActivityAutoTracking(this) // Automatic tracking of user activity
 
@@ -29,6 +28,7 @@ class App : TravelApp() {
         OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE)
         OneSignal.initWithContext(this)
         OneSignal.setAppId(getString(R.string.onesignal_app_id))
+        OneSignal.promptForPushNotifications();
     }
 
 }
